@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Saumya ❤️</title>
+<style>
+:root {
+  --site-primary: #e8799b;
+  --site-on-primary: #ffffff;
+  --site-secondary: #f8dce5;
+  --site-on-secondary: #713449;
+  --site-background: #fff4f7;
+  --site-on-background: #512b3a;
+  --site-font-body: ui-rounded, "Segoe UI", system-ui, sans-serif;
+  --site-font-heading: Georgia, "Times New Roman", serif;
+  --site-heading-scale: 1;
+  --site-spacing-scale: 1;
+  --site-radius-scale: 1;
+  --site-decoration-opacity: 1;
+  color-scheme: light dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--site-font-body); }
+#app {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--site-background);
+  color: var(--site-on-background);
+  display: grid;
+  place-items: center;
+  padding: calc(28px * var(--site-spacing-scale));
+}
+.scene { width: min(100%, 720px); position: relative; z-index: 1; }
+.card {
+  background: light-dark(rgba(255,255,255,.86), rgba(48,27,37,.88));
+  border: 1px solid light-dark(#f2cbd8, #714455);
+  border-radius: calc(30px * var(--site-radius-scale));
+  padding: clamp(28px, 6vw, 58px);
+  text-align: center;
+  box-shadow: 0 22px 70px rgba(126, 48, 77, .13);
+  backdrop-filter: blur(10px);
+}
+.eyebrow { color: var(--site-primary); text-transform: uppercase; letter-spacing: .22em; font-size: .74rem; font-weight: 800; }
+h1 { font: 600 calc(clamp(2.5rem, 8vw, 4.6rem) * var(--site-heading-scale))/1.05 var(--site-font-heading); margin: 16px 0 10px; color: light-dark(#9d3d60, #ffb5ca); }
+.subtitle { font-size: 1.1rem; color: light-dark(#a45d75, #eab5c5); margin: 0 0 25px; }
+.heart { font-size: 3.2rem; display: inline-block; animation: beat 1.25s infinite; filter: drop-shadow(0 8px 12px #e8799b55); }
+.message { font-size: 1.04rem; line-height: 1.85; max-width: 540px; margin: 0 auto; color: light-dark(#694353, #f4dce5); }
+.note { background: var(--site-secondary); color: var(--site-on-secondary); border-radius: 18px; padding: 18px 20px; margin: 27px auto; max-width: 520px; line-height: 1.7; }
+.buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+button { border: 0; border-radius: 999px; padding: 14px 23px; font: 700 1rem var(--site-font-body); cursor: pointer; transition: transform .18s, box-shadow .18s; }
+button:hover { transform: translateY(-2px); box-shadow: 0 9px 22px #b84e7440; }
+.primary { background: var(--site-primary); color: var(--site-on-primary); }
+.secondary { background: transparent; color: light-dark(#9d3d60, #ffb5ca); border: 1px solid var(--site-primary); }
+#reply { min-height: 55px; margin-top: 22px; color: light-dark(#a13f63, #ffb5ca); font: italic 1.25rem var(--site-font-heading); }
+.signature { margin-top: 24px; font-size: .9rem; color: light-dark(#a77b8b, #d4a7b6); }
+.music-player { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 22px auto; padding: 13px 16px; max-width: 440px; border: 1px solid light-dark(#f2cbd8, #714455); border-radius: 18px; background: light-dark(#fff5f8, #442b37); }
+.music-player button { padding: 11px 18px; font-size: .92rem; }
+.music-label { font-size: .9rem; color: light-dark(#9d3d60, #ffb5ca); }
+.floating { position: absolute; inset: 0; overflow: hidden; pointer-events: none; opacity: var(--site-decoration-opacity); }
+.floating span { position: absolute; bottom: -50px; color: #e8799b; opacity: .25; animation: rise linear infinite; }
+.floating span:nth-child(1) { left: 8%; font-size: 28px; animation-duration: 13s; }
+.floating span:nth-child(2) { left: 23%; font-size: 18px; animation-duration: 17s; animation-delay: 2s; }
+.floating span:nth-child(3) { left: 78%; font-size: 34px; animation-duration: 15s; animation-delay: 1s; }
+.floating span:nth-child(4) { left: 91%; font-size: 22px; animation-duration: 19s; animation-delay: 4s; }
+.floating span:nth-child(5) { left: 53%; font-size: 20px; animation-duration: 16s; animation-delay: 3s; }
+@keyframes rise { to { transform: translateY(-115vh) rotate(25deg); } }
+@keyframes beat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.13); } }
+@media (max-width: 480px) { .card { padding: 30px 21px; } .message { font-size: .98rem; } button { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+</style>
+</head>
+<body>
+<main id="app">
+  <div class="floating" aria-hidden="true"><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+  <section class="scene">
+    <div class="card">
+      <div class="heart" aria-hidden="true">❤️</div>
+      <div class="eyebrow">A little note from my heart</div>
+      <h1>I'm sorry, Saumya</h1>
+      <p class="subtitle">My cutie, please read this… 🥺</p>
+      <div class="music-player"><button class="primary" id="musicToggle" type="button">▶ Play our little melody</button><span class="music-label" id="musicStatus">A tiny original love tune 🎶</span></div>
+      <p class="message">I know I made a mistake, and I understand why you're angry with me. I'm truly sorry for hurting you. You didn't deserve that, and I don't want to brush aside your feelings or make excuses.</p>
+      <div class="note">You mean so much to me, Saumya. I'll try to understand better, listen more carefully, and show you through my actions that I'm learning from this. ❤️</div>
+      <p class="message">I can't ask you to stop being upset instantly. Take the time you need. I just wanted you to know that I'm genuinely sorry, and that you are very special to me, my cutie.</p>
+      <div class="buttons">
+      <button class="primary" id="forgive">Yes, I forgive you ❤️</button>
+        <button class="secondary" id="time">I need a little time</button>
+      </div>
+      <div id="reply" role="status" aria-live="polite"></div>
+      <div class="signature">With love, and a genuinely sorry heart 💗</div>
+    </div>
+  </section>
+  <section class="scene" id="thankYouPage" hidden>
+    <div class="card">
+      <div class="heart" aria-hidden="true">💖</div>
+      <div class="eyebrow">A little something just for you</div>
+      <h1>Thank you, my cutie!</h1>
+      <p class="subtitle">Saumya, you just made my heart smile. 🥹</p>
+      <div class="music-player"><button class="primary" id="musicToggleThanks" type="button">▶ Play our little melody</button><span class="music-label">Just for you, my cutie 🎶</span></div>
+      <p class="message">My sweetest Saumya, thank you for giving me a chance to make things right. I know one “sorry” cannot erase a mistake, but I promise I will learn from it and try to be more thoughtful with your heart.</p>
+      <div class="note">You are my favourite person, my happiness, and my cutest reason to smile. I never want you to feel that your feelings don't matter. You deserve love, respect, patience, and honesty — always. ❤️</div>
+      <p class="message">Sending you the biggest virtual hug and a thousand little kisses. I love you, my cutie. 😘</p>
+      <div class="buttons">
+        <button class="primary" id="backToNote">Read my apology again 💌</button>
+      </div>
+      <div class="signature">Forever cheering for your smile — with love 💗</div>
+    </div>
+  </section>
+</main>
+<script>
+const reply = document.getElementById('reply');
+const apologyPage = document.querySelector('#app .scene');
+const thankYouPage = document.getElementById('thankYouPage');
+let audioContext;
+let melodyTimer;
+let melodyIndex = 0;
+let melodyPlaying = false;
+const melody = [523.25, 659.25, 783.99, 659.25, 587.33, 659.25, 698.46, 587.33, 523.25, 440, 493.88, 523.25, 587.33, 523.25, 493.88, 440];
+function playNote(frequency, duration = 0.42) {
+  const now = audioContext.currentTime;
+  const oscillator = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+  oscillator.type = 'sine';
+  oscillator.frequency.setValueAtTime(frequency, now);
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.12, now + 0.035);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+  oscillator.connect(gain);
+  gain.connect(audioContext.destination);
+  oscillator.start(now);
+  oscillator.stop(now + duration + 0.03);
+}
+function updateMusicButtons() {
+  const label = melodyPlaying ? 'Ⅱ Pause melody' : '▶ Play our little melody';
+  document.getElementById('musicToggle').textContent = label;
+  document.getElementById('musicToggleThanks').textContent = label;
+  document.getElementById('musicStatus').textContent = melodyPlaying ? 'A little love, in every note 💗' : 'A tiny original love tune 🎶';
+}
+async function toggleMelody() {
+  if (melodyPlaying) {
+    clearInterval(melodyTimer);
+    melodyPlaying = false;
+    updateMusicButtons();
+    return;
+  }
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) {
+    document.getElementById('musicStatus').textContent = 'Audio is not supported in this browser.';
+    return;
+  }
+  audioContext = audioContext || new AudioContextClass();
+  await audioContext.resume();
+  melodyPlaying = true;
+  playNote(melody[melodyIndex]);
+  melodyIndex = (melodyIndex + 1) % melody.length;
+  melodyTimer = setInterval(() => {
+    playNote(melody[melodyIndex]);
+    melodyIndex = (melodyIndex + 1) % melody.length;
+  }, 460);
+  updateMusicButtons();
+}
+document.getElementById('musicToggle').addEventListener('click', toggleMelody);
+document.getElementById('musicToggleThanks').addEventListener('click', toggleMelody);
+function showApology() {
+  thankYouPage.hidden = true;
+  apologyPage.hidden = false;
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+}
+document.getElementById('forgive').addEventListener('click', () => {
+  apologyPage.hidden = true;
+  thankYouPage.hidden = false;
+  history.pushState({ page: 'thank-you' }, '', '#thank-you');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+document.getElementById('backToNote').addEventListener('click', showApology);
+window.addEventListener('popstate', showApology);
+document.getElementById('time').addEventListener('click', () => {
+  reply.textContent = 'Of course, Saumya. Take your time. I’ll respect your feelings and be here when you’re ready. 💗';
+});
+</script>
+</body>
+</html>
